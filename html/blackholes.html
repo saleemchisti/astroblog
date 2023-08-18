@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/blackholes.js" defer ></script>
+    <title>Planets</title>
+    <link rel="stylesheet" href="../css/blackholes.css">
+    <link rel ="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="../asset/images/pngwing.com.png">
+        </label>
+        <img src="../asset/images/logo.png" class="logo">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a  href="./objects.html">Objects</a> </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class=" row-1">
+            <div class="col-1">
+                <video src="../asset/videos/139586 (540p).mp4" class="vid" autoplay muted loop></video>
+            </div>
+            <div class="col-2">
+                <h2>Welcome To<br>blackholes</h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="para">
+                <p>Don't let the name fool you: a black hole is anything but empty space. Rather, it is a great amount of matter packed into a very small area - think of a star ten times more massive than the Sun squeezed into a sphere approximately the diameter of New York City. The result is a gravitational field so strong that nothing, not even light, can escape. In recent years, NASA instruments have painted a new picture of these strange objects that are, to many, the most fascinating objects in space.<br>
+                    The idea of an object in space so massive and dense that light could not escape it has been around for centuries. Most famously, black holes were predicted by Einstein's theory of general relativity, which showed that when a massive star dies, it leaves behind a small, dense remnant core. If the core's mass is more than about three times the mass of the Sun, the equations showed, the force of gravity overwhelms all other forces and produces a black hole.</p>
+                    <button class="btn"><a href="https://universe.nasa.gov/black-holes/types/#:~:text=IntroductionTypes%20of%20Black%20Holes,the%20boundaries%20should%20be%20set.">Know more</a></button>
+            </div>
+        </div>
+        <div id="row-3"> 
+            <div id="garllaryImages">
+                <img class="a"  onclick="openImg(1,'Stellar',' <p> When a star with more than eight times the Sun’s mass runs out of fuel, its core collapses, rebounds, and explodes as a supernova. What’s left behind depends on the star’s mass before the explosion. If it was near the threshold, it creates a city-sized, superdense neutron star. If it had around 20 times the Sun’s mass or more, the star’s core collapses into a stellar-mass black hole. <br> The masses of these newly born objects can range from a few to hundreds of times the Sun’s mass, depending on star’s mass when the supernova began. Stellar-mass black holes can continue to gain mass through collisions with stars and other black holes.<br><br> Nearly all the stellar-mass black holes observed so far have been found because they’re paired with stars. They likely originated as mismatched stars where the more massive one evolved rapidly into a black hole. In some cases, called X-ray binaries, the black hole pulls gas off the star into a disk that heats up enough to produce X-rays. Binaries have revealed around 50 suspected or confirmed stellar-mass black holes in the Milky Way, but scientists think there may be as many as 100 million in our galaxy alone.</p>')">
+                <img class="a"  onclick="openImg(2,'Super-Massive','<p>Almost every large galaxy, including our Milky Way, has a supermassive black hole at its center. These monster objects have hundreds of thousands to billions of times the Sun’s mass, although some scientists place the lower boundary at tens of thousands. <br><br> The one at the center of our galaxy, Sagittarius A* (pronounced ey-star), is 4 million times the mass of the Sun – relatively small compared to those found in some other galaxies. For example, the black hole at the center of galaxy Holmberg 15A holds at least 40 billion solar masses.<br><br> Scientists aren’t sure how these monster objects came to be.Observations of distant galaxies show that some supermassive black holes formed in the first billion years after the birth of the universe. It’s possible these black holes began with the collapse of supermassive stars in the early universe, which gave them a head start. <br><br> While their origins are mysterious, scientists know supermassive black holes can grow by feeding on smaller objects, like their stellar-mass relatives and neutron stars. They can also merge with other supermassive black holes when galaxies collide.</p>')">
+                <img class="a"  onclick="openImg(3,'Intermediate','<p>Scientists are puzzled by the size gap between stellar-mass and supermassive black holes. <br><br>They think there should be a continuum of sizes because, over cosmic time, collisions between stellar-mass black holes should have created some intermediate-mass black holes. These should range from around one hundred to hundreds of thousands of times the Sun’s mass – or tens of thousands, depending on how supermassive black holes are defined.<br><br> Scientists are actively hunting for examples of these so-called missing-link black holes. Numerous candidates have been identified but have proven difficult to confirm.</p>')">
+                <img class="a"  onclick="openImg(4,'Primordial','<p>Scientists theorize that primordial black holes formed in the first second after the birth of the universe. In that moment, pockets of hot material may have been dense enough to form black holes, potentially with masses ranging from 100,000 times less than a paperclip to 100,000 times more than the Sun’s. Then as the universe quickly expanded and cooled, the conditions for forming black holes this way ended.<br><br> Now, 13.8 billion years later, scientists haven’t yet found definitive proof these primordial black holes ever existed. It’s possible, however, that they could have evaporated as the cosmos aged due to quantum mechanical processes occurring at the edges of their event horizons. According to theoretical predictions, lower-mass black holes (those with less mass than a mountain) would evaporate more quickly than larger ones, which could mean many of these early black holes have completely dissipated. But more massive primordial black holes could still linger across the universe.</p>')">   
+            </div>
+            <div id="subWindow" style="display: none;">
+                <img  src="../asset/images/cancel.png" id="close" onclick="closeImg()">
+                    <div id="subWindow1">
+                        <img id="subWindowImg" id="fullimg" src="../asset/images/blackholes/1.jpg">
+                    </div>
+                    <div id="subWindow2">
+                        <h1 id="imageHeading">Heading</h1>
+                        <p id="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio?</p>
+                    </div>
+            </div>
+            <button class="btn"><a href="../asset/videos/video.mp4">Watch Video</a></button>
+         </div>
+    </div>
+</body>
+</html>

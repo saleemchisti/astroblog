@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/stars.js" defer ></script>
+    <title>Stars</title>
+    <link rel="stylesheet" href="../css/stars.css">
+    <link rel ="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="../asset/images/pngwing.com.png">
+        </label>
+        <img src="../asset/images/logo.png" class="logo">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a  href="./objects.html">Objects</a> </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class=" row-1">
+            <div class="col-1">
+                <video src="../asset/videos/night_sky_-_31569 (720p).mp4" class="vid" autoplay muted loop></video>
+            </div>
+            <div class="col-2">
+                <h2>Welcome To<br>Stars</h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="para">
+                <p>Stars are the most widely recognized astronomical objects, and represent the most fundamental building blocks of galaxies. The age, distribution, and composition of the stars in a galaxy trace the history, dynamics, and evolution of that galaxy. Moreover, stars are responsible for the manufacture and distribution of heavy elements such as carbon, nitrogen, and oxygen, and their characteristics are intimately tied to the characteristics of the planetary systems that may coalesce about them. Consequently, the study of the birth, life, and death of stars is central to the field of astronomy.</p>
+                    <button class="btn"><a href="https://astrobackyard.com/types-of-stars/">Know more</a></button>
+            </div>
+        </div>
+        <div id="row-3"> 
+            <div id="garllaryImages">
+                <img class="a"  onclick="openImg(1,'Arcturus','Arcturus, also known as Alpha Boötis, is one of the brightest stars in the northern hemisphere. In fact, it is the third brightest individual star in the entire night sky behind Sirius and Canopus. At times, it is referred to as the fourth brightest star in the night sky, behind Alpha Centauri, when binary stars are included. <br>Distance to Earth: ~37 light-years <br> Radius: 25.4±0.2[7] R☉ <br>Apparent magnitude: -0.30 <br>Surface Temperature: 4286±30[7] K <br> Coordinates: 14h 15m 39s RA, +19° 10′ 56” DE')">
+                <img class="a"  onclick="openImg(2,'Betelgeuse','Betelgeuse is a red supergiant star of spectral type M1-2 and one of the largest visible to the naked eye. It is usually the tenth-brightest star in the night sky and, after Rigel, the second-brightest in the constellation of Orion. It is a distinctly reddish, semiregular variable star whose apparent magnitude, varying between +0.0 and +1.6, has the widest range displayed by any first-magnitude star. At near-infrared wavelengths, Betelgeuse is the brightest star in the night sky. <br> Temperature	3,600±200[11] K')">
+                <img class="a"  onclick="openImg(3,'Procyon','Procyon, Alpha Canis Minoris (α CMi), is the primary component in a binary star system located only 11.46 light-years from Earth in the constellation Canis Minor. With an apparent magnitude of 0.34, it is the brightest star in Canis Minor and the eighth brightest star in the sky. Like its brighter neighbour Sirius (the Dog Star) in Canis Major, Procyon is one of the nearest stars to the Sun.<br> Distance	11.46 ± 0.05 light-years <br> Temperature	6,530±50[3] K <br> Age	1.87±0.13[9] Gyr <br> Radius	0.01234±0.00032[5] R☉')">
+                <img class="a"  onclick="openImg(4,'Rigel','Rigel is a blue supergiant star in the constellation of Orion. It has the Bayer designation β Orionis, which is Latinized to Beta Orionis and abbreviated Beta Ori or β Ori. Rigel is the brightest and most massive component – and the eponym – of a star system of at least four stars that appear as a single blue-white point of light to the naked eye. This system is located at a distance of approximately 860 light-years (260 pc) from the Sun. <br> Distance	863[15][16] ly <br> Temperature	12,100±150[19] K <br> Age	8±1[9] Myr ')">
+                <img class="a"  onclick="openImg(5,'Sirius','Sirius, also known as the Dog Star or Sirius A, is the brightest star in Earths night sky. The name means glowing in Greek — a fitting description, as only a few planets, the full moon and the International Space Station outshine this star. <br> Distance	8.709 ± 0.005 ly <br> Temperature	9,940 Kv <br> Age	242±5 Myr ')">
+                <img class="a"  onclick="openImg(6,'Sun','The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core. The Sun radiates this energy mainly as light, ultraviolet, and infrared radiation, and is the most important source of energy for life on Earth. <br> Temperature	Center (modeled): 1.57×107 K[5] Photosphere (effective): 5,772 K[5] <br> Age ≈4.6 billion years' )">
+            </div>
+            <div id="subWindow" style="display: none;">
+                <img  src="../asset/images/cancel.png" id="close" onclick="closeImg()">
+                    <div id="subWindow1">
+                        <img id="subWindowImg" id="fullimg" src="../asset/images/stars/1.jpg">
+                    </div>
+                    <div id="subWindow2">
+                        <h1 id="imageHeading">Heading</h1>
+                        <p id="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio?</p>
+                    </div>
+            </div>
+            <button class="btn"><a href="../asset/videos/videoplayback (1).mp4">Watch Video</a></button>
+         </div>
+    </div>
+</body>
+</html>

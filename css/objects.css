@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-2 h2 {
+    font-size: 64px;
+    float: right;
+}
+.col-2::after
+{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#ff469f,#ff6062);
+    position: absolute;
+    right: -40px;
+    float: right;
+}
+.col-1
+{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin-right :50px;
+}
+.col-1 .vid{
+    width: 100%;
+    border-radius: 15px 100% 15px 50%;
+    transition: all 3s;
+}
+.col-1 .vid:hover 
+{
+    border-radius: 50% 15px 100% 15px ;
+    transition: all 3s;
+}
+
+.row-2 {
+    padding: 30px 0;
+
+}
+.objects-list a 
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+.objects-list a 
+{
+    background-color: transparent;
+}
+.objects-list img{
+    width: 250px;
+}
+.objects-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+.objects-list div {
+    padding: 20px;
+    background-color:rgb(150, 150, 150) ;
+    border-radius: 15px;
+}
+.objects-list div:hover 
+{
+    transform: scale(1.03);
+    transition:all 0.5s;
+}
+.objects-list #planets  img {
+    width: 100%;
+    height: 270px;
+    
+}
+.objects-list #stars  img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+}
+.objects-list #astroids  img {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+}
+.objects-list #blackholes  img {
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+}
+.objects-list h2 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.row-3{    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:600px)
+{
+    .col-1 .vid
+    {
+        display: none;
+    }
+    .col-2 h2 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .col-2::after
+    {
+        display: none;
+    }
+
+}

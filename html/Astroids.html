@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/astroids.js" defer ></script>
+    <title>Astroids</title>
+    <link rel="stylesheet" href="../css/astroids.css">
+    <link rel ="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="../asset/images/pngwing.com.png">
+        </label>
+        <img src="../asset/images/logo.png" class="logo">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a  href="./objects.html">Objects</a> </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class=" row-1">
+            <div class="col-1">
+                <video src="../asset/videos/asteroids_-_9135 (720p).mp4" class="vid" autoplay muted loop></video>
+            </div>
+            <div class="col-2">
+                <h2>Welcome To<br>Astroids</h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="para">
+                <p>Asteroids, sometimes called minor planets, are rocky remnants left over from the early formation of our solar system about 4.6 billion years ago.The current known asteroid count is: 1,300,687.
+                    <br>Most of this ancient space rubble can be found orbiting our Sun between Mars and Jupiter within the main asteroid belt. Asteroids range in size from Vesta – the largest at about 329 miles (530 kilometers) in diameter – to bodies that are less than 33 feet (10 meters) across. The total mass of all the asteroids combined is less than that of Earth's Moon.
+                    <br>Most asteroids are irregularly shaped, though a few are nearly spherical, and they are often pitted or cratered. As they revolve around the Sun in elliptical orbits, the asteroids also rotate, sometimes quite erratically, tumbling as they go. More than 150 asteroids are known to have a small companion moon (some have two moons). There are also binary (double) asteroids, in which two rocky bodies of roughly equal size orbit each other, as well as triple asteroid systems.
+                </p>
+                    <button class="btn"><a href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/asteroids/in-depth/">Know more</a></button>
+            </div>
+        </div>
+        <div id="row-3"> 
+            <div id="garllaryImages">
+                <img class="a"  onclick="openImg(1,'C-type','C-type asteroids are the most common type of asteroid. The C in their name is for two reasons, first for carbonaceous because of their high carbon content and second for Chondrite which is the other name they receive: chondrite asteroids. They get this name because they contain chondrules, which are tiny grain-shaped pieces that form when molten material cools down. C-type asteroids can be made of anywhere between 20% and 80% of chondrites. <br>These asteroids are mostly made out of silicate minerals, olivine, and pyroxene. They are mostly stone and contain very low percentages of metals like nickel and iron.<br>Chondrites are some of the oldest materials in the solar system and are believed to be the building blocks for planets. <br> There are about 27,000 C-type meteors on Earth that are believed to have been part of a C-type asteroid at some point..')">
+                <img class="a"  onclick="openImg(2,'S-Type','Approximately 17% of asteroids are S-type, which makes them the second most common type. <br> The S in their name is for sillicate because they are stony and mostly made out of iron-sillicates or magnesium-sillicates. <br>Some of the largest asteroids in the asteroid belt are of this type and they are mostly located in the inner parts of it. Some of them like 4 Vesta and 3 Juno are even visible using home telescopes.')">
+                <img class="a"  onclick="openImg(3,'M-Type','M-type asteroids are very interesting because some of them are thought to be remaining cores of early planets that never ended up forming completely. The M in their names is for metal as they have high concentrations of these materials, usually nickel and iron, but some can even have a bunch of precious metals like gold (See for example our article on asteroid Psyche 16).<br>This is the type of asteroid that people refer to when they talk about space mining.<br>M-type asteroids are believed to have formed close to the Sun and they would have had to been exposed to high temperatures in their early days. Some of them might have even had iron volcanoes at some point. These asteroids are also the source of the metallic meteorites that sometimes reach Earth, these meteorites are pieces that fell off after a collision of an M-type asteroid with another object.<br>This type of asteroid represents only about 5% of the total.')">
+
+            </div>
+            <div id="subWindow" style="display: none;">
+                <img  src="../asset/images/cancel.png" id="close" onclick="closeImg()">
+                    <div id="subWindow1">
+                        <img id="subWindowImg" id="fullimg" src="../asset/images/astroids/1.jpg">
+                    </div>
+                    <div id="subWindow2">
+                        <h1 id="imageHeading">Heading</h1>
+                        <p id="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio?</p>
+                    </div>
+            </div>
+            <button class="btn"><a href="../asset/videos/videoplayback (2).mp4">Watch Video</a></button>
+         </div>
+    </div>
+</body>
+</html>

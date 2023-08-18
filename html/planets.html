@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../javascript/planets.js" defer ></script>
+    <title>Planets</title>
+    <link rel="stylesheet" href="../css/planets.css">
+    <link rel ="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <img src="../asset/images/pngwing.com.png">
+        </label>
+        <img src="../asset/images/logo.png" class="logo">
+            <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a  href="./objects.html">Objects</a> </li>
+            </ul>
+    </nav>
+    <div class="container">
+        <div class=" row-1">
+            <div class="col-1">
+                <video src="../asset/videos/140202 (720p).mp4" class="vid" autoplay muted loop></video>
+            </div>
+            <div class="col-2">
+                <h2>Welcome To<br>Planets</h2>
+            </div>
+        </div>
+        <div class="row-2">
+            <div class="para">
+                <p>There are more planets than stars in our galaxy. The current count orbiting our star: eight.
+                    The inner, rocky planets are Mercury, Venus, Earth, and Mars. NASA's newest rover — Perseverance — landed on Mars on Feb. 18, 2021. The outer planets are gas giants Jupiter and Saturn and ice giants Uranus and Neptune.
+                    Beyond Neptune, a newer class of smaller worlds called dwarf planets reign, including longtime favorite Pluto. Thousands more planets have been discovered beyond our solar system. Scientists call them exoplanets (exo means "from outside").</p>
+                    <button class="btn"><a href="https://solarsystem.nasa.gov/planets/overview/">Know more</a></button>
+            </div>
+        </div>
+        <div id="row-3"> 
+            <div id="garllaryImages">
+                <img class="a"  onclick="openImg(1,'Mercury','It is the smallest planet in the Solar System, with an equatorial radius of 2,439.7 kilometres.')">
+                <img class="a"  onclick="openImg(2,'Venus','Venus is the second planet from the Sun. It is sometimes called Earths sister or twin planet as it is almost as large and has a similar composition.')">
+                <img class="a"  onclick="openImg(3,'Earth','Earth is the third planet from the Sun in the Solar System. It is the only planet known to have life on it. The Earth formed about 4.5 billion years ago')">
+                <img class="a"  onclick="openImg(4,'Mars','Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, larger only than Mercury.')">
+                <img class="a"  onclick="openImg(5,'Jupiter','Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun.')">
+                <img class="a"  onclick="openImg(6,'Saturn','Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.')">
+                <img class="a"  onclick="openImg(7,'Uranus','Uranus is the seventh planet from the Sun. It is named after Greek sky deity Uranus Caelus, who in Greek mythology is the father of Cronus Saturn, a grandfather of Zeus Jupiter and great-grandfather of Ares Mars.')">
+                <img class="a"  onclick="openImg(8,'Neptune','Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet')">
+            </div>
+            <div id="subWindow" style="display: none;">
+                <img  src="../asset/images/cancel.png" id="close" onclick="closeImg()">
+                    <div id="subWindow1">
+                        <img id="subWindowImg" id="fullimg" src="../asset/images/Planets/1.jpg">
+                    </div>
+                    <div id="subWindow2">
+                        <h1 id="imageHeading">Heading</h1>
+                        <p id="imgpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, odio?</p>
+                    </div>
+            </div>
+            <button class="btn"><a href="../asset/videos/Solar_System_101___National_Geographic(720p).mp4">Watch Video</a></button>
+         </div>
+    </div>
+</body>
+</html>

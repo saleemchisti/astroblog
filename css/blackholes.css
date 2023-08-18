@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-2{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-2::after
+{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#ff469f,#ff6062);
+    position: absolute;
+    right: -40px;
+    float: right;
+}
+.col-2 h2 {
+    font-size: 64px;
+    float: right;
+}
+
+.col-1
+{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    margin-right :50px;
+}
+.col-1 .vid{
+    width: 100%;
+    border-radius: 15px 100% 15px 50%;
+    transition: all 3s;
+}
+.col-1 .vid:hover 
+{
+    border-radius: 50% 15px 100% 15px ;
+    transition: all 3s;
+}
+.row-2{
+    width: 100%;
+    text-align: justify;
+}   
+.btn
+{
+    background-color: #0082e6;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all 3s;
+    margin-left: 45%;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+    transition: all 3s;
+}
+#garllaryImages{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+#garllaryImages .a:hover
+{
+    transform: scale(1.1);
+    transition:all 0.5s
+}
+#heading{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    top: 50vh;
+    left: 20vw;
+    letter-spacing: 15px;
+    word-spacing: 10px;
+    text-shadow: 5px 5px 5px black;
+}
+#subWindow{
+    width: 80vw;
+    height: 80vh;
+    background-color :black;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    z-index: 3;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    word-wrap: break-word;
+    align-items: center;
+}
+#subWindowImg{
+    width: 45vw;
+    height: 60vh;
+    position: absolute;
+    border: 5px groove white;
+}
+#close{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+}
+    #imageHeading{
+        position: absolute;
+        right: 10vw;
+        top: 5vh;
+        color: white;
+    }
+    #imgpara{
+        position: absolute;
+        right:2vw;
+        top: 15vh;
+        color: white;
+        width: 24vw;
+        height: 35vh;
+        text-align: justify;
+        overflow: auto;
+    }
+#subWindow1{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10vh;
+    float: left;
+    left: 2%;
+}
+#subWindow2{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    float: left;
+    top: 10vh;
+    right: 1vw;
+
+}
+
+#close{
+    background-color: white;
+    width: 40px;
+    border-radius: 100%;
+}
+@media screen and (max-width:600px)
+{
+
+    .btn {
+        margin-left: 33%;
+    }
+    #garllaryImages{
+        padding-left: 15%;
+    }
+    .col-2 h2 {
+        font-size: 30px;
+    }
+    .col-1 .vid {
+        display: none;
+    }
+    
+    #subWindow1{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        top: 10vh;
+        float: left;
+        left: 2%;
+    }
+    
+#subWindowImg{
+    width: 60vw;
+    height: 20vh;
+    margin: 20px;
+}
+    #imageHeading
+    {
+        margin-top: 20vh;
+        padding-right: 50px;
+    }
+    #subWindow2{
+        width: 100%;
+        height: 200px;
+
+    }
+    #imgpara{
+        font-size: 20px;
+        margin-top: 17vh;
+        width: 80%;
+        position: absolute;
+    }
+}
